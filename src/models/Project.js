@@ -12,12 +12,15 @@ export const project = sequelize.define(
     },
     name: {
       type: DataTypes.STRING,
+      allowNull: false
     },
     priority: {
       type: DataTypes.INTEGER,
+      allowNull: false
     },
     description: {
       type: DataTypes.STRING,
+      allowNull: false
     },
   },
   {

@@ -12,10 +12,12 @@ export const tasks = sequelize.define(
     },
     name: {
       type: DataTypes.STRING,
+      allowNull: false
     },
     done: {
       type: DataTypes.BOOLEAN,
       defaulValue: false,
+      allowNull:false
     },
 
   },
