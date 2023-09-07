@@ -5,8 +5,8 @@ import { variables } from "./utilities/variables.js";
 
 async function main(){
     try {
-        await project.sync();
-        await tasks.sync();
+        await project.sync({force:false});
+        await tasks.sync({force:false});
         app.listen(variables.PORT,()=>{
             console.log(`http://localhost:${variables.PORT}`);
         });
